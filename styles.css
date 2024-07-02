@@ -110,13 +110,13 @@
     padding: 48px 96px;
   }
 
-  @media screen and (max-width: 750px) {
+  @media (max-width: 750px) {
     main article {
         padding: 24px 48px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     main article {
         padding: 12px 24px;
     }
