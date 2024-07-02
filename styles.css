@@ -33,13 +33,6 @@
     text-decoration: none;
     color: var(--text-color-lighter)
   }
-
-  @media screen (max-width: 750px) {
-    nav> a {
-      display: flex;  
-      justify-content: space-around;
-    }
-  }
   
   a:hover {
     text-decoration: underline;
@@ -136,6 +129,23 @@
     main > aside > nav {
       display: flex;
       justify-content: space-around;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    nav > a {
+      margin: 1px;
+      text-align: center;
+      padding: 1px;
+      border-radius: 1px;
+    }
+    nav > a.logo {
+      margin: 1px 0;
+      text-align: center;
+      padding: 1px;
+      border-radius: 1px;
     }
   }
 
