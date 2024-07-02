@@ -110,19 +110,28 @@
   main article {
     padding: 48px 96px;
   }
-
-  @media (max-width: 750px) {
-    main article {
-        padding: 24px 48px;
+  
+  @media screen and (min-width: 750px) {
+    header > nav {
+      display: none;
     }
-}
-
-@media (max-width: 480px) {
-    main article {
-        padding: 12px 24px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    main > aside::before {
+      content: "";
+      clear: both;
+      display: block;
     }
-}
-      
+    main > aside {
+      float: none;
+    }
+    main > aside > nav {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
   main p {
     line-height: 1.75;
     margin-bottom: 48px;;
