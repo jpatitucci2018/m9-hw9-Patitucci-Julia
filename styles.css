@@ -33,6 +33,13 @@
     text-decoration: none;
     color: var(--text-color-lighter)
   }
+
+  @media screen (max-width: 750px) {
+    nav> a {
+      display: flex;  
+      justify-content: space-around;
+    }
+  }
   
   a:hover {
     text-decoration: underline;
@@ -116,7 +123,7 @@
       display: none;
     }
   }
-  
+
   @media screen and (max-width: 750px) {
     main > aside::before {
       content: "";
