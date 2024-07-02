@@ -20,28 +20,7 @@
     min-height: 100vh;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.59' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   }
-
-  @media screen and (min-width: 750px) {
-    header > nav {
-        display: none;
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-    main::before {
-        content: "";
-        clear: both;
-        display: block;
-    }
-    main {
-        float: none;
-    }
-    main > article img {
-        display: flex;
-        justify-content: space-around;
-    }
-  }
-  
+ 
   h1 {
     font-size: 2.5rem;
   }
@@ -130,6 +109,19 @@
   main article {
     padding: 48px 96px;
   }
+
+  @media screen and (max-width: 750px) {
+    main article {
+        padding: 24px 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main article {
+        padding: 12px 24px;
+    }
+}
+    
   
   main p {
     line-height: 1.75;
